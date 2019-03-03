@@ -1,0 +1,986 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		496EB2B722281FE800032665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496EB2B622281FE800032665 /* AppDelegate.swift */; };
+		496EB2B922281FE800032665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496EB2B822281FE800032665 /* ViewController.swift */; };
+		496EB2BB22281FE900032665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496EB2BA22281FE900032665 /* Assets.xcassets */; };
+		496EB2BE22281FE900032665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496EB2BC22281FE900032665 /* Main.storyboard */; };
+		496EB2CA22281FE900032665 /* checavelModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496EB2C922281FE900032665 /* checavelModelTests.swift */; };
+		496EB2D522281FE900032665 /* checavelModelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496EB2D422281FE900032665 /* checavelModelUITests.swift */; };
+		4978F31022258BDD00ECE47B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4978F30F22258BDD00ECE47B /* AppDelegate.swift */; };
+		4978F31222258BDD00ECE47B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4978F31122258BDD00ECE47B /* ViewController.swift */; };
+		4978F31522258BDD00ECE47B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4978F31322258BDD00ECE47B /* Main.storyboard */; };
+		4978F31722258BDF00ECE47B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4978F31622258BDF00ECE47B /* Assets.xcassets */; };
+		4978F31A22258BDF00ECE47B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4978F31822258BDF00ECE47B /* LaunchScreen.storyboard */; };
+		4978F32522258BDF00ECE47B /* ChecavelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4978F32422258BDF00ECE47B /* ChecavelTests.swift */; };
+		4978F33022258BDF00ECE47B /* ChecavelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4978F32F22258BDF00ECE47B /* ChecavelUITests.swift */; };
+		49804F05222C19ED00814FFD /* DatasetChecavel.csv in Resources */ = {isa = PBXBuildFile; fileRef = 49804F04222C19ED00814FFD /* DatasetChecavel.csv */; };
+		49804F07222C2B0E00814FFD /* Checavel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 49804F06222C2B0E00814FFD /* Checavel.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		496EB2C622281FE900032665 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4978F30422258BDD00ECE47B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 496EB2B322281FE800032665;
+			remoteInfo = checavelModel;
+		};
+		496EB2D122281FE900032665 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4978F30422258BDD00ECE47B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 496EB2B322281FE800032665;
+			remoteInfo = checavelModel;
+		};
+		4978F32122258BDF00ECE47B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4978F30422258BDD00ECE47B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4978F30B22258BDD00ECE47B;
+			remoteInfo = Checavel;
+		};
+		4978F32C22258BDF00ECE47B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4978F30422258BDD00ECE47B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4978F30B22258BDD00ECE47B;
+			remoteInfo = Checavel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		496EB2B422281FE800032665 /* checavelModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = checavelModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		496EB2B622281FE800032665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		496EB2B822281FE800032665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		496EB2BA22281FE900032665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		496EB2BD22281FE900032665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		496EB2BF22281FE900032665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		496EB2C022281FE900032665 /* checavelModel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = checavelModel.entitlements; sourceTree = "<group>"; };
+		496EB2C522281FE900032665 /* checavelModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = checavelModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		496EB2C922281FE900032665 /* checavelModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checavelModelTests.swift; sourceTree = "<group>"; };
+		496EB2CB22281FE900032665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		496EB2D022281FE900032665 /* checavelModelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = checavelModelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		496EB2D422281FE900032665 /* checavelModelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checavelModelUITests.swift; sourceTree = "<group>"; };
+		496EB2D622281FE900032665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4978F30C22258BDD00ECE47B /* Checavel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checavel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4978F30F22258BDD00ECE47B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4978F31122258BDD00ECE47B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4978F31422258BDD00ECE47B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4978F31622258BDF00ECE47B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4978F31922258BDF00ECE47B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4978F31B22258BDF00ECE47B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4978F32022258BDF00ECE47B /* ChecavelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChecavelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4978F32422258BDF00ECE47B /* ChecavelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecavelTests.swift; sourceTree = "<group>"; };
+		4978F32622258BDF00ECE47B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4978F32B22258BDF00ECE47B /* ChecavelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChecavelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4978F32F22258BDF00ECE47B /* ChecavelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecavelUITests.swift; sourceTree = "<group>"; };
+		4978F33122258BDF00ECE47B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49804F04222C19ED00814FFD /* DatasetChecavel.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DatasetChecavel.csv; sourceTree = "<group>"; };
+		49804F06222C2B0E00814FFD /* Checavel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Checavel.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		496EB2B122281FE800032665 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496EB2C222281FE900032665 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496EB2CD22281FE900032665 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4978F30922258BDD00ECE47B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4978F31D22258BDF00ECE47B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4978F32822258BDF00ECE47B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		496EB2B522281FE800032665 /* checavelModel */ = {
+			isa = PBXGroup;
+			children = (
+				496EB2B622281FE800032665 /* AppDelegate.swift */,
+				496EB2B822281FE800032665 /* ViewController.swift */,
+				496EB2BA22281FE900032665 /* Assets.xcassets */,
+				49804F04222C19ED00814FFD /* DatasetChecavel.csv */,
+				496EB2BC22281FE900032665 /* Main.storyboard */,
+				496EB2BF22281FE900032665 /* Info.plist */,
+				496EB2C022281FE900032665 /* checavelModel.entitlements */,
+			);
+			path = checavelModel;
+			sourceTree = "<group>";
+		};
+		496EB2C822281FE900032665 /* checavelModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				496EB2C922281FE900032665 /* checavelModelTests.swift */,
+				496EB2CB22281FE900032665 /* Info.plist */,
+			);
+			path = checavelModelTests;
+			sourceTree = "<group>";
+		};
+		496EB2D322281FE900032665 /* checavelModelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				496EB2D422281FE900032665 /* checavelModelUITests.swift */,
+				496EB2D622281FE900032665 /* Info.plist */,
+			);
+			path = checavelModelUITests;
+			sourceTree = "<group>";
+		};
+		4978F30322258BDD00ECE47B = {
+			isa = PBXGroup;
+			children = (
+				4978F30E22258BDD00ECE47B /* Checavel */,
+				4978F32322258BDF00ECE47B /* ChecavelTests */,
+				4978F32E22258BDF00ECE47B /* ChecavelUITests */,
+				496EB2B522281FE800032665 /* checavelModel */,
+				496EB2C822281FE900032665 /* checavelModelTests */,
+				496EB2D322281FE900032665 /* checavelModelUITests */,
+				4978F30D22258BDD00ECE47B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4978F30D22258BDD00ECE47B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4978F30C22258BDD00ECE47B /* Checavel.app */,
+				4978F32022258BDF00ECE47B /* ChecavelTests.xctest */,
+				4978F32B22258BDF00ECE47B /* ChecavelUITests.xctest */,
+				496EB2B422281FE800032665 /* checavelModel.app */,
+				496EB2C522281FE900032665 /* checavelModelTests.xctest */,
+				496EB2D022281FE900032665 /* checavelModelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4978F30E22258BDD00ECE47B /* Checavel */ = {
+			isa = PBXGroup;
+			children = (
+				4978F30F22258BDD00ECE47B /* AppDelegate.swift */,
+				4978F31122258BDD00ECE47B /* ViewController.swift */,
+				4978F31322258BDD00ECE47B /* Main.storyboard */,
+				49804F06222C2B0E00814FFD /* Checavel.mlmodel */,
+				4978F31622258BDF00ECE47B /* Assets.xcassets */,
+				4978F31822258BDF00ECE47B /* LaunchScreen.storyboard */,
+				4978F31B22258BDF00ECE47B /* Info.plist */,
+			);
+			path = Checavel;
+			sourceTree = "<group>";
+		};
+		4978F32322258BDF00ECE47B /* ChecavelTests */ = {
+			isa = PBXGroup;
+			children = (
+				4978F32422258BDF00ECE47B /* ChecavelTests.swift */,
+				4978F32622258BDF00ECE47B /* Info.plist */,
+			);
+			path = ChecavelTests;
+			sourceTree = "<group>";
+		};
+		4978F32E22258BDF00ECE47B /* ChecavelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4978F32F22258BDF00ECE47B /* ChecavelUITests.swift */,
+				4978F33122258BDF00ECE47B /* Info.plist */,
+			);
+			path = ChecavelUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		496EB2B322281FE800032665 /* checavelModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496EB2DD22281FE900032665 /* Build configuration list for PBXNativeTarget "checavelModel" */;
+			buildPhases = (
+				496EB2B022281FE800032665 /* Sources */,
+				496EB2B122281FE800032665 /* Frameworks */,
+				496EB2B222281FE800032665 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = checavelModel;
+			productName = checavelModel;
+			productReference = 496EB2B422281FE800032665 /* checavelModel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		496EB2C422281FE900032665 /* checavelModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496EB2DE22281FE900032665 /* Build configuration list for PBXNativeTarget "checavelModelTests" */;
+			buildPhases = (
+				496EB2C122281FE900032665 /* Sources */,
+				496EB2C222281FE900032665 /* Frameworks */,
+				496EB2C322281FE900032665 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				496EB2C722281FE900032665 /* PBXTargetDependency */,
+			);
+			name = checavelModelTests;
+			productName = checavelModelTests;
+			productReference = 496EB2C522281FE900032665 /* checavelModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		496EB2CF22281FE900032665 /* checavelModelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496EB2DF22281FE900032665 /* Build configuration list for PBXNativeTarget "checavelModelUITests" */;
+			buildPhases = (
+				496EB2CC22281FE900032665 /* Sources */,
+				496EB2CD22281FE900032665 /* Frameworks */,
+				496EB2CE22281FE900032665 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				496EB2D222281FE900032665 /* PBXTargetDependency */,
+			);
+			name = checavelModelUITests;
+			productName = checavelModelUITests;
+			productReference = 496EB2D022281FE900032665 /* checavelModelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		4978F30B22258BDD00ECE47B /* Checavel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4978F33422258BDF00ECE47B /* Build configuration list for PBXNativeTarget "Checavel" */;
+			buildPhases = (
+				4978F30822258BDD00ECE47B /* Sources */,
+				4978F30922258BDD00ECE47B /* Frameworks */,
+				4978F30A22258BDD00ECE47B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Checavel;
+			productName = Checavel;
+			productReference = 4978F30C22258BDD00ECE47B /* Checavel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4978F31F22258BDF00ECE47B /* ChecavelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4978F33722258BDF00ECE47B /* Build configuration list for PBXNativeTarget "ChecavelTests" */;
+			buildPhases = (
+				4978F31C22258BDF00ECE47B /* Sources */,
+				4978F31D22258BDF00ECE47B /* Frameworks */,
+				4978F31E22258BDF00ECE47B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4978F32222258BDF00ECE47B /* PBXTargetDependency */,
+			);
+			name = ChecavelTests;
+			productName = ChecavelTests;
+			productReference = 4978F32022258BDF00ECE47B /* ChecavelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4978F32A22258BDF00ECE47B /* ChecavelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4978F33A22258BDF00ECE47B /* Build configuration list for PBXNativeTarget "ChecavelUITests" */;
+			buildPhases = (
+				4978F32722258BDF00ECE47B /* Sources */,
+				4978F32822258BDF00ECE47B /* Frameworks */,
+				4978F32922258BDF00ECE47B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4978F32D22258BDF00ECE47B /* PBXTargetDependency */,
+			);
+			name = ChecavelUITests;
+			productName = ChecavelUITests;
+			productReference = 4978F32B22258BDF00ECE47B /* ChecavelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4978F30422258BDD00ECE47B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Manuella Valença";
+				TargetAttributes = {
+					496EB2B322281FE800032665 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					496EB2C422281FE900032665 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 496EB2B322281FE800032665;
+					};
+					496EB2CF22281FE900032665 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 496EB2B322281FE800032665;
+					};
+					4978F30B22258BDD00ECE47B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4978F31F22258BDF00ECE47B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4978F30B22258BDD00ECE47B;
+					};
+					4978F32A22258BDF00ECE47B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4978F30B22258BDD00ECE47B;
+					};
+				};
+			};
+			buildConfigurationList = 4978F30722258BDD00ECE47B /* Build configuration list for PBXProject "Checavel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4978F30322258BDD00ECE47B;
+			productRefGroup = 4978F30D22258BDD00ECE47B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4978F30B22258BDD00ECE47B /* Checavel */,
+				4978F31F22258BDF00ECE47B /* ChecavelTests */,
+				4978F32A22258BDF00ECE47B /* ChecavelUITests */,
+				496EB2B322281FE800032665 /* checavelModel */,
+				496EB2C422281FE900032665 /* checavelModelTests */,
+				496EB2CF22281FE900032665 /* checavelModelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		496EB2B222281FE800032665 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496EB2BB22281FE900032665 /* Assets.xcassets in Resources */,
+				496EB2BE22281FE900032665 /* Main.storyboard in Resources */,
+				49804F05222C19ED00814FFD /* DatasetChecavel.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496EB2C322281FE900032665 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496EB2CE22281FE900032665 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4978F30A22258BDD00ECE47B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4978F31A22258BDF00ECE47B /* LaunchScreen.storyboard in Resources */,
+				4978F31722258BDF00ECE47B /* Assets.xcassets in Resources */,
+				4978F31522258BDD00ECE47B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4978F31E22258BDF00ECE47B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4978F32922258BDF00ECE47B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		496EB2B022281FE800032665 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496EB2B922281FE800032665 /* ViewController.swift in Sources */,
+				496EB2B722281FE800032665 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496EB2C122281FE900032665 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496EB2CA22281FE900032665 /* checavelModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496EB2CC22281FE900032665 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496EB2D522281FE900032665 /* checavelModelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4978F30822258BDD00ECE47B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4978F31222258BDD00ECE47B /* ViewController.swift in Sources */,
+				49804F07222C2B0E00814FFD /* Checavel.mlmodel in Sources */,
+				4978F31022258BDD00ECE47B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4978F31C22258BDF00ECE47B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4978F32522258BDF00ECE47B /* ChecavelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4978F32722258BDF00ECE47B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4978F33022258BDF00ECE47B /* ChecavelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		496EB2C722281FE900032665 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 496EB2B322281FE800032665 /* checavelModel */;
+			targetProxy = 496EB2C622281FE900032665 /* PBXContainerItemProxy */;
+		};
+		496EB2D222281FE900032665 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 496EB2B322281FE800032665 /* checavelModel */;
+			targetProxy = 496EB2D122281FE900032665 /* PBXContainerItemProxy */;
+		};
+		4978F32222258BDF00ECE47B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4978F30B22258BDD00ECE47B /* Checavel */;
+			targetProxy = 4978F32122258BDF00ECE47B /* PBXContainerItemProxy */;
+		};
+		4978F32D22258BDF00ECE47B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4978F30B22258BDD00ECE47B /* Checavel */;
+			targetProxy = 4978F32C22258BDF00ECE47B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		496EB2BC22281FE900032665 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				496EB2BD22281FE900032665 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4978F31322258BDD00ECE47B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4978F31422258BDD00ECE47B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4978F31822258BDF00ECE47B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4978F31922258BDF00ECE47B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		496EB2D722281FE900032665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6M67K4CFU7;
+				INFOPLIST_FILE = checavelModel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = weekly2.checavelModel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		496EB2D822281FE900032665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6M67K4CFU7;
+				INFOPLIST_FILE = checavelModel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = weekly2.checavelModel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		496EB2D922281FE900032665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6M67K4CFU7;
+				INFOPLIST_FILE = checavelModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = weekly2.checavelModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/checavelModel.app/Contents/MacOS/checavelModel";
+			};
+			name = Debug;
+		};
+		496EB2DA22281FE900032665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6M67K4CFU7;
+				INFOPLIST_FILE = checavelModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = weekly2.checavelModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/checavelModel.app/Contents/MacOS/checavelModel";
+			};
+			name = Release;
+		};
+		496EB2DB22281FE900032665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6M67K4CFU7;
+				INFOPLIST_FILE = checavelModelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = weekly2.checavelModelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = checavelModel;
+			};
+			name = Debug;
+		};
+		496EB2DC22281FE900032665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6M67K4CFU7;
+				INFOPLIST_FILE = checavelModelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = weekly2.checavelModelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = checavelModel;
+			};
+			name = Release;
+		};
+		4978F33222258BDF00ECE47B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4978F33322258BDF00ECE47B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4978F33522258BDF00ECE47B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M67K4CFU7;
+				INFOPLIST_FILE = Checavel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weekly2.Checavel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4978F33622258BDF00ECE47B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M67K4CFU7;
+				INFOPLIST_FILE = Checavel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weekly2.Checavel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4978F33822258BDF00ECE47B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M67K4CFU7;
+				INFOPLIST_FILE = ChecavelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weekly2.ChecavelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Checavel.app/Checavel";
+			};
+			name = Debug;
+		};
+		4978F33922258BDF00ECE47B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M67K4CFU7;
+				INFOPLIST_FILE = ChecavelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weekly2.ChecavelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Checavel.app/Checavel";
+			};
+			name = Release;
+		};
+		4978F33B22258BDF00ECE47B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M67K4CFU7;
+				INFOPLIST_FILE = ChecavelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weekly2.ChecavelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Checavel;
+			};
+			name = Debug;
+		};
+		4978F33C22258BDF00ECE47B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M67K4CFU7;
+				INFOPLIST_FILE = ChecavelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weekly2.ChecavelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Checavel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		496EB2DD22281FE900032665 /* Build configuration list for PBXNativeTarget "checavelModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496EB2D722281FE900032665 /* Debug */,
+				496EB2D822281FE900032665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		496EB2DE22281FE900032665 /* Build configuration list for PBXNativeTarget "checavelModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496EB2D922281FE900032665 /* Debug */,
+				496EB2DA22281FE900032665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		496EB2DF22281FE900032665 /* Build configuration list for PBXNativeTarget "checavelModelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496EB2DB22281FE900032665 /* Debug */,
+				496EB2DC22281FE900032665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4978F30722258BDD00ECE47B /* Build configuration list for PBXProject "Checavel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4978F33222258BDF00ECE47B /* Debug */,
+				4978F33322258BDF00ECE47B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4978F33422258BDF00ECE47B /* Build configuration list for PBXNativeTarget "Checavel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4978F33522258BDF00ECE47B /* Debug */,
+				4978F33622258BDF00ECE47B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4978F33722258BDF00ECE47B /* Build configuration list for PBXNativeTarget "ChecavelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4978F33822258BDF00ECE47B /* Debug */,
+				4978F33922258BDF00ECE47B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4978F33A22258BDF00ECE47B /* Build configuration list for PBXNativeTarget "ChecavelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4978F33B22258BDF00ECE47B /* Debug */,
+				4978F33C22258BDF00ECE47B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4978F30422258BDD00ECE47B /* Project object */;
+}
