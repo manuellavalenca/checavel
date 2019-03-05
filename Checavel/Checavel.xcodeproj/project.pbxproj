@@ -20,8 +20,8 @@
 		4978F31A22258BDF00ECE47B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4978F31822258BDF00ECE47B /* LaunchScreen.storyboard */; };
 		4978F32522258BDF00ECE47B /* ChecavelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4978F32422258BDF00ECE47B /* ChecavelTests.swift */; };
 		4978F33022258BDF00ECE47B /* ChecavelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4978F32F22258BDF00ECE47B /* ChecavelUITests.swift */; };
-		49804F05222C19ED00814FFD /* DatasetChecavel.csv in Resources */ = {isa = PBXBuildFile; fileRef = 49804F04222C19ED00814FFD /* DatasetChecavel.csv */; };
-		49804F07222C2B0E00814FFD /* Checavel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 49804F06222C2B0E00814FFD /* Checavel.mlmodel */; };
+		49804F09222F2BA600814FFD /* DatasetChecavel.csv in Resources */ = {isa = PBXBuildFile; fileRef = 49804F08222F2BA600814FFD /* DatasetChecavel.csv */; };
+		49804F0D222F2E3C00814FFD /* Checavel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 49804F0C222F2E3C00814FFD /* Checavel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +82,8 @@
 		4978F32B22258BDF00ECE47B /* ChecavelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChecavelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4978F32F22258BDF00ECE47B /* ChecavelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecavelUITests.swift; sourceTree = "<group>"; };
 		4978F33122258BDF00ECE47B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49804F04222C19ED00814FFD /* DatasetChecavel.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DatasetChecavel.csv; sourceTree = "<group>"; };
-		49804F06222C2B0E00814FFD /* Checavel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Checavel.mlmodel; sourceTree = "<group>"; };
+		49804F08222F2BA600814FFD /* DatasetChecavel.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DatasetChecavel.csv; path = "../../../../../../Library/Mobile Documents/com~apple~Numbers/Documents/DatasetChecavel.csv"; sourceTree = "<group>"; };
+		49804F0C222F2E3C00814FFD /* Checavel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Checavel.mlmodel; path = ../../../../../Checavel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +137,8 @@
 			children = (
 				496EB2B622281FE800032665 /* AppDelegate.swift */,
 				496EB2B822281FE800032665 /* ViewController.swift */,
+				49804F08222F2BA600814FFD /* DatasetChecavel.csv */,
 				496EB2BA22281FE900032665 /* Assets.xcassets */,
-				49804F04222C19ED00814FFD /* DatasetChecavel.csv */,
 				496EB2BC22281FE900032665 /* Main.storyboard */,
 				496EB2BF22281FE900032665 /* Info.plist */,
 				496EB2C022281FE900032665 /* checavelModel.entitlements */,
@@ -196,9 +196,9 @@
 				4978F30F22258BDD00ECE47B /* AppDelegate.swift */,
 				4978F31122258BDD00ECE47B /* ViewController.swift */,
 				4978F31322258BDD00ECE47B /* Main.storyboard */,
-				49804F06222C2B0E00814FFD /* Checavel.mlmodel */,
 				4978F31622258BDF00ECE47B /* Assets.xcassets */,
 				4978F31822258BDF00ECE47B /* LaunchScreen.storyboard */,
+				49804F0C222F2E3C00814FFD /* Checavel.mlmodel */,
 				4978F31B22258BDF00ECE47B /* Info.plist */,
 			);
 			path = Checavel;
@@ -395,7 +395,7 @@
 			files = (
 				496EB2BB22281FE900032665 /* Assets.xcassets in Resources */,
 				496EB2BE22281FE900032665 /* Main.storyboard in Resources */,
-				49804F05222C19ED00814FFD /* DatasetChecavel.csv in Resources */,
+				49804F09222F2BA600814FFD /* DatasetChecavel.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4978F31222258BDD00ECE47B /* ViewController.swift in Sources */,
-				49804F07222C2B0E00814FFD /* Checavel.mlmodel in Sources */,
+				49804F0D222F2E3C00814FFD /* Checavel.mlmodel in Sources */,
 				4978F31022258BDD00ECE47B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

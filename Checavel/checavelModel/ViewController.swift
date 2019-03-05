@@ -8,6 +8,7 @@
 
 import Cocoa
 import CreateML
+import NaturalLanguage
 
 class ViewController: NSViewController {
     
@@ -27,13 +28,13 @@ class ViewController: NSViewController {
         }
         
         // Create classifier with MLDataTable
-        let classifierColumns = ["Frase", "Checavel?"]
+        let classifierColumns = ["Frase", "Checavel"]
         let classifierTable = dataTable[classifierColumns]
         let (classifierEvaluationTable, classifierTrainingTable) = classifierTable.randomSplit(by: 0.20, seed: 5)
         
         do {
-            let classifier = try MLClassifier(trainingData: classifierTable,
-                                              targetColumn: "Checavel?")
+            let modelParameters = MLTextClassifier.ModelParameters(validationData: classifierEvaluationTable, language: NLLanguage.portuguese)
+            let classifier = try MLTextClassifier(trainingData: classifierTrainingTable, textColumn: "Frase", labelColumn: "Checavel", parameters: modelParameters)
             let trainingError = classifier.trainingMetrics.classificationError
             let trainingAccuracy = (1.0 - trainingError) * 100
             
@@ -42,7 +43,7 @@ class ViewController: NSViewController {
             let evaluationAccuracy = (1.0 - evaluationError) * 100
             
             let classifierMetadata = MLModelMetadata(author: "Manuella Valença",
-                                                     shortDescription: "Predicts if a sentence is or isn't suitable for fac-checking",
+                                                     shortDescription: "Predicts if a sentence is or isn't suitable for fact-checking",
                                                      version: "1.0")
             let desktopPath = NSURL(fileURLWithPath: "/Users/manuellavalenca/Desktop")
             try classifier.write(to: (desktopPath.appendingPathComponent("Checavel.mlmodel"))!, metadata: classifierMetadata)
