@@ -46,7 +46,7 @@ class ViewController: NSViewController {
                                                      shortDescription: "Predicts if a sentence is or isn't suitable for fact-checking",
                                                      version: "1.0")
             let desktopPath = NSURL(fileURLWithPath: "/Users/manuellavalenca/Desktop")
-            try classifier.write(to: (desktopPath.appendingPathComponent("Checavel.mlmodel"))!, metadata: classifierMetadata)
+            try classifier.write(to: (desktopPath.appendingPathComponent("ChecavelModel.mlmodel"))!, metadata: classifierMetadata)
             
             
         } catch {
