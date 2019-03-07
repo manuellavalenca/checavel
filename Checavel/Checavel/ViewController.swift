@@ -17,27 +17,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var checkButton: UIButton!
     @IBOutlet weak var checabilityLabel: UILabel!
     let model = ChecavelModel()
-//    var nlmodel = NLModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 191/255, green: 237/255, blue: 242/255, alpha: 1.0)
         
-        
         self.checabilityLabel.text = ""
-        
         self.sentenceTextField.delegate = self
         self.checabilityLabel.isHidden = true
-        
-        print("Entrou no viewDidLoad")
 
     }
 
     @IBAction func checkButton(_ sender: Any) {
-        //VER AQUI DPS
-        self.predict(sentenceTextField.text!)
-        self.checabilityLabel.isHidden = false
-        self.view.endEditing(true)
+        if sentenceTextField.text != ""{
+            self.predict(sentenceTextField.text!)
+            self.checabilityLabel.isHidden = false
+            self.view.endEditing(true)
+        }
     }
     
     func predict(_ sentence: String){
