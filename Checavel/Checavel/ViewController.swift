@@ -12,6 +12,7 @@ import NaturalLanguage
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var probabilityLabel: UILabel!
     @IBOutlet weak var sentenceTextField: UITextField!
     @IBOutlet weak var checkButton: UIButton!
     @IBOutlet weak var checabilityLabel: UILabel!
@@ -20,74 +21,48 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(red: 191/255, green: 237/255, blue: 242/255, alpha: 1.0)
         
-        sentenceTextField.delegate = self
+        
+        self.checabilityLabel.text = ""
+        
+        self.sentenceTextField.delegate = self
+        self.checabilityLabel.isHidden = true
+        
         print("Entrou no viewDidLoad")
-        
-        
-     
-        
-//        if let url = Bundle.main.url(forResource: "Checavel", withExtension:"mlmodel"){
-//            print("Entrou no if")
-//            do {
-//                nlmodel = try NLModel(contentsOf: url)
-//                print("Criou o NLModel")
-//            } catch{
-//                print("deu merda")
-//            }
-//        }
-        
-        
-//        if let typed = sentenceTextField.text{
-//            sentenceInput = typed
-//        }
 
     }
 
     @IBAction func checkButton(_ sender: Any) {
         //VER AQUI DPS
         self.predict(sentenceTextField.text!)
+        self.checabilityLabel.isHidden = false
+        self.view.endEditing(true)
     }
     
     func predict(_ sentence: String){
         
-//        guard let ChecavelOutput = try? model.prediction(Frase: sentence) else {
-//            fatalError("Unexpected runtime error")
-//        }
-//
-//        let checabilityPrediction = ChecavelOutput.Checavel_
-//        checabilityLabel.text = checabilityPrediction
-        
-        
-        
-//
-//        if let assetPath = Bundle.url(forResource: "ChecavelModel", withExtension:"mlmodel", subdirectory: <#String?#>, in: <#URL#>) {
-//            do{
-//                let compiledUrl = try MLModel.compileModel(at: assetPath)
-//                let model = try MLModel(contentsOf: compiledUrl)
-//                let nlmodel = try NLModel(mlModel: model)
-//                print("Criou o NLModel")
-//
-//                let prediction = nlmodel.predictedLabel(for: sentence)
-//
-//                checabilityLabel.text = prediction
-//                print("\(sentence)  -- > \(prediction)")
-//
-//            }
-//            catch{
-//                print("deu merda aqui no compilado")
-//            }
-//        }
-        
-        var prediction = ""
         do {
-            prediction = try model.prediction(text: sentence).label
-            checabilityLabel.text = prediction
-        }catch{
-            print("nao rolou a prediction")
+            let input = ChecavelModelInput(text: sentence)
+            let options = MLPredictionOptions()
+            let prediction = try model.prediction(input: input, options: options)
+            //let probability = prediction?.classLabel
+            
+            //probabilityLabel.text = "\(probability.)"
+            
+            checabilityLabel.text = prediction.label
+            
+            if prediction.label == "SIM"{
+                self.checabilityLabel.backgroundColor = UIColor(red: 45/255, green: 113/255, blue: 127/255, alpha: 1.0)
+            } else{
+                self.checabilityLabel.backgroundColor = UIColor(red: 225/255, green: 181/255, blue: 211/255, alpha: 1.0)
+            }
+            
+            print("\(sentence)  -- > \(prediction.label)")
+            
+        } catch{
             checabilityLabel.text = "Não rolou a prediction"
         }
-        print("\(sentence)  -- > \(prediction)")
         
     }
     
@@ -98,8 +73,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         checabilityLabel.text = ""
+        self.checabilityLabel.isHidden = true
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
+//    func hideKeyboardWithTap() {
+//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+//    }
+//
+//    @objc func dismissKeyboard(){
+//        self.view.endEditing(true)
+//    }
 }
 
